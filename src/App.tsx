@@ -1,15 +1,17 @@
 import './App.css'
-import { DashboardLayoult } from './components/layoult/DashboardLayoult'
+import { Route, Routes } from 'react-router-dom'
+import { DashboardLayout } from './components/layoult/DashboardLayoult'
+import { DashboardHome } from './pages/DashboardHome'
+import { UsersPage } from './pages/UsersPage'
 
 function App() {
-  
   return (
-    <DashboardLayoult>
-      <section className='rounded-2xl bg-white p-6 shadow-sm'>
-        <h3 className='text-xl font-bold'>Conteúdo central</h3>
-        <p className='mt-2 text-slate-600'>página</p>
-      </section>
-    </DashboardLayoult>
+    <Routes>
+      <Route element={<DashboardLayout />}>
+        <Route index element={<DashboardHome />} />
+        <Route path="produtos" element={<UsersPage />} />
+      </Route>
+    </Routes>
   )
 }
 
