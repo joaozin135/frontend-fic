@@ -37,7 +37,7 @@ export function DashboardHome() {
       <div>
         <h3 className="text-2xl font-bold">Resumo</h3>
         <p className="text-slate-600">
-          Visão geral do painel administrativo.
+          Visão geral do painel administrativo. (faltou criatividadekkkkkkkk)
         </p>
       </div>
 
