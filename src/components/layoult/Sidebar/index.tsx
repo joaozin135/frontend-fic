@@ -24,6 +24,24 @@ export function Sidebar() {
         >
           Usuários
         </NavLink>
+
+        <NavLink
+          to="/categorias"
+          className={({ isActive }) =>
+            `block w-full rounded-lg px-4 py-2 text-left transition ${isActive ? 'bg-slate-700 text-white' : 'text-slate-300 hover:bg-slate-800 hover:text-white'}`
+          }
+        >
+          Categorias
+        </NavLink>
+
+        <NavLink
+          to="/cursos"
+          className={({ isActive }) =>
+            `block w-full rounded-lg px-4 py-2 text-left transition ${isActive ? 'bg-slate-700 text-white' : 'text-slate-300 hover:bg-slate-800 hover:text-white'}`
+          }
+        >
+          Cursos
+        </NavLink>
       </nav>
     </aside>
   )
